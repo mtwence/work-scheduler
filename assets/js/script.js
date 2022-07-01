@@ -157,18 +157,22 @@ function retain9() {
 }
 retain9()
 
-var hourNow = moment().format("h")
-var hourNum = [9, 10, 11, 12, 1, 2, 3, 4, 5]
-var textArea = $("<textarea>")
+var hourNow = moment().format("H");
+console.log(hourNow)
+var hourNum = [9, 10, 11, 12, 13, 14, 15, 16, 17];
+// console.log(hourNum)
+var textArea = [text1, text2, text3, text4, text5, text6, text7, text8, text9]
+// console.log(textArea)
 
-function changeBgColor () {
-    for (var i = 0; i < hourNum.length; i++) {
-        if (hourNum[i] === hourNow) {
-            textArea.addClass("present");
+function changeBgColor() {
+    for (var i = 0; i < 9; i++) {
+        if (hourNum[i] == hourNow) {
+            textArea[i].addClass("present");
         } else if (hourNum[i] < hourNow) {
-            textArea.addClass("past");
+            textArea[i].addClass("past");
         } else {
-            textArea.addClass("future")
+            textArea[i].addClass("future");
         }
     }
 }
+changeBgColor()
