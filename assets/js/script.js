@@ -38,4 +38,16 @@ retain1()
 // RECREATE CODE FOR REST OF ROWS
 
 // 10AM 
+var saveBtn2 = $("#b2")
+var text2 = $("#t2")
 
+saveBtn2.on("click", function () {
+    var note2 = text2.val();
+    localStorage.setItem("10", note2);
+})
+
+function retain2() {
+    var maintain = localStorage.getItem("10");
+    text2.text(maintain)
+}
+retain2()
