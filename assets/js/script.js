@@ -157,12 +157,14 @@ function retain9() {
 }
 retain9()
 
+
+
+
+
+// FUNCTION: Change Row Colors based on time of day currently
 var hourNow = moment().format("H");
-console.log(hourNow)
 var hourNum = [9, 10, 11, 12, 13, 14, 15, 16, 17];
-// console.log(hourNum)
 var textArea = [text1, text2, text3, text4, text5, text6, text7, text8, text9]
-// console.log(textArea)
 
 function changeBgColor() {
     for (var i = 0; i < 9; i++) {
@@ -176,3 +178,16 @@ function changeBgColor() {
     }
 }
 changeBgColor()
+
+// FOR LOOP for Locale Store:
+// var btnArray = [saveBtn1, saveBtn2, saveBtn3, saveBtn4, saveBtn5, saveBtn6, saveBtn7, saveBtn8, saveBtn9];
+
+// for (var i = 0; i <9; i++) {
+//     btnArray[i].on("click", function () {
+//         var note = JSON.stringify(textArea[i]);
+//         localStorage.setItem(btnArray[i], note);
+
+//     })
+// }
+
+// Could not get to work I think I was getting close but not sure how to set textarea[i].val
