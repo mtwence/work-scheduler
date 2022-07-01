@@ -51,3 +51,108 @@ function retain2() {
     text2.text(maintain)
 }
 retain2()
+
+// 11AM 
+var saveBtn3 = $("#b3")
+var text3 = $("#t3")
+
+saveBtn3.on("click", function () {
+    var note3 = text3.val();
+    localStorage.setItem("11", note3);
+})
+
+function retain3() {
+    var maintain = localStorage.getItem("11");
+    text3.text(maintain)
+}
+retain3()
+
+// 12AM 
+var saveBtn4 = $("#b4")
+var text4 = $("#t4")
+
+saveBtn4.on("click", function () {
+    var note4 = text4.val();
+    localStorage.setItem("12", note4);
+})
+
+function retain4() {
+    var maintain = localStorage.getItem("12");
+    text4.text(maintain)
+}
+retain4()
+
+// 1PM 
+var saveBtn5 = $("#b5")
+var text5 = $("#t5")
+
+saveBtn5.on("click", function () {
+    var note5 = text5.val();
+    localStorage.setItem("1", note5);
+})
+
+function retain5() {
+    var maintain = localStorage.getItem("1");
+    text5.text(maintain)
+}
+retain5()
+
+// 2PM 
+var saveBtn6 = $("#b6")
+var text6 = $("#t6")
+
+saveBtn6.on("click", function () {
+    var note6 = text6.val();
+    localStorage.setItem("2", note6);
+})
+
+function retain6() {
+    var maintain = localStorage.getItem("2");
+    text6.text(maintain)
+}
+retain6()
+
+// 3PM 
+var saveBtn7 = $("#b7")
+var text7 = $("#t7")
+
+saveBtn7.on("click", function () {
+    var note7 = text7.val();
+    localStorage.setItem("3", note7);
+})
+
+function retain7() {
+    var maintain = localStorage.getItem("3");
+    text7.text(maintain)
+}
+retain7()
+
+// 4PM 
+var saveBtn8 = $("#b8")
+var text8 = $("#t8")
+
+saveBtn8.on("click", function () {
+    var note8 = text8.val();
+    localStorage.setItem("4", note8);
+})
+
+function retain8() {
+    var maintain = localStorage.getItem("4");
+    text8.text(maintain)
+}
+retain8()
+
+// 5PM 
+var saveBtn9 = $("#b9")
+var text9 = $("#t9")
+
+saveBtn9.on("click", function () {
+    var note9 = text9.val();
+    localStorage.setItem("5", note9);
+})
+
+function retain9() {
+    var maintain = localStorage.getItem("5");
+    text9.text(maintain)
+}
+retain9()
