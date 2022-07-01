@@ -156,3 +156,19 @@ function retain9() {
     text9.text(maintain)
 }
 retain9()
+
+var hourNow = moment().format("h")
+var hourNum = [9, 10, 11, 12, 1, 2, 3, 4, 5]
+var textArea = $("<textarea>")
+
+function changeBgColor () {
+    for (var i = 0; i < hourNum.length; i++) {
+        if (hourNum[i] === hourNow) {
+            textArea.addClass("present");
+        } else if (hourNum[i] < hourNow) {
+            textArea.addClass("past");
+        } else {
+            textArea.addClass("future")
+        }
+    }
+}
