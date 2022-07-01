@@ -5,20 +5,24 @@ var time = $("#currentDay");
 // Set text in </p> to the moment format 
 time.text("Current Date: " + momentDate)
 
+// Lessons learned: I could've created and array of objects with key value pairs for the date & text.
+// From there I couldve used jquery to appened classes to the newwly created html elements,
+// and then set and get locale storage all from one for loop instead of having to save them for each hardcoded html row
+// Maybe something like this:
+
 // var hourText = [
-//     {Text: ""},
-//     {Text: ""},
-//     {Text: ""},
-//     {Text: ""},
-//     {Text: ""},
-//     {Text: ""},
-//     {Text: ""},
-//     {Text: ""},
-//     {Text: ""},
+// {Time: ""Text: "",},
+// {Time: ""Text: "",},
+// {Time: ""Text: "",},
+// {Time: ""Text: "",},
+// {Time: ""Text: "",},
+// {Time: ""Text: "",},
+// {Time: ""Text: "",},
+// {Time: ""Text: "",},
+// {Time: ""Text: "",}, 
 // ]
 
 // THEORY CRAFT VARIABLES AND FUNCTIONS FOR 9AM ROW 
-
 // jquery selector on 9am rows button and text area 
 var saveBtn1 = $("#b1")
 var text1 = $("#t1")
