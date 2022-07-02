@@ -36,7 +36,7 @@ A simple user-friendly web app to manage your workday schedule by the hour. Slee
 
 ### Code Snippet
 
-```
+```ruby
  <div class="container p-10">
     <div class="row time-block">
       <span class="col-md-1 hour">9 AM</span>
@@ -45,11 +45,10 @@ A simple user-friendly web app to manage your workday schedule by the hour. Slee
       <button id="b1" class="saveBtn col-md-1 bg-success"><i class="fas fa-save"></i></button>
     </div>
 ```
-{: .language-ruby}
 
 #### Code snippet showing how the rows were created in html using bootstrap.
 
-```
+```ruby
 var saveBtn2 = $("#b2")
 var text2 = $("#t2")
 
