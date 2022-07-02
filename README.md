@@ -34,7 +34,7 @@ A simple user-friendly web app to manage your workday schedule by the hour. Slee
 
 ![schedulizer web-app demo](/assets/images/schedulizer-demo.gif)
 
-### Code Snippet
+### Code Snippets
 
 ```ruby
  <div class="container p-10">
@@ -45,8 +45,8 @@ A simple user-friendly web app to manage your workday schedule by the hour. Slee
       <button id="b1" class="saveBtn col-md-1 bg-success"><i class="fas fa-save"></i></button>
     </div>
 ```
-
-#### Code snippet showing how the rows were created in html using bootstrap.
+I created an html container `<div>` for my time block, text area, and button. Using bootstrap I createed rows out these elements and formatted their sizing.
+<br>
 
 ```ruby
 var saveBtn2 = $("#b2")
@@ -63,10 +63,30 @@ function retain2() {
 }
 retain2()
 ```
-{: .language-ruby}
 
-#### Code snippet of variables referenced with jquery selectors on the html. There is an event listener on that specific row's save button, which on click will save the contents of the text area to local storage. Then there is a persist function which will display your previously entered text even upon a page reload. 
+Here I created variables referenced with jquery selectors on the html. I attached an event listener on that specific row's save button; upon click, the contents of the text area are saved to local storage. Lastly, there is a persist function which displays your previously entered text once the page is refreshed.  
+<br>
 
+```ruby
+var hourNow = moment().format("H");
+var hourNum = [9, 10, 11, 12, 13, 14, 15, 16, 17];
+var textArea = [text1, text2, text3, text4, text5, text6, text7, text8, text9]
+
+function changeBgColor() {
+    for (var i = 0; i < 9; i++) {
+        if (hourNum[i] == hourNow) {
+            textArea[i].addClass("present");
+        } else if (hourNum[i] < hourNow) {
+            textArea[i].addClass("past");
+        } else {
+            textArea[i].addClass("future");
+        }
+    }
+}
+changeBgColor()
+```
+This code block is what changes the text area color based on what time is. The function has a nested for loop that compares the current hour(in a 24 scale) to and array of 9am-5pm, represented by a single numeral value (in a 24 hour scale).For instance, if it was 12:30pm, the 12pm text area would have a red background. Time blocks 1pm-5pm would be green, and time blocks 9am-11am would be grey. 
+<br>
 
 ## User Information
 
