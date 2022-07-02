@@ -21,17 +21,18 @@ A simple user-friendly web app to manage your workday schedule by the hour. Slee
 - HTML
 - CSS
 - Bootstrap
+- Javascript
 - jQuery
 
 ## Deployed Link
 
-[Deployed Link](https://mtwence.github.io/workday-schedulizer/)
+[9-5 Schedulizer Link](https://mtwence.github.io/workday-schedulizer/)
 
 ## Usage
 
 ### Website Demo
 
-![alt text]()
+![schedulizer web-app demo](/assets/images/schedulizer-demo.gif)
 
 ### Code Snippet
 '''
