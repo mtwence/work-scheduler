@@ -35,7 +35,9 @@ A simple user-friendly web app to manage your workday schedule by the hour. Slee
 ![schedulizer web-app demo](/assets/images/schedulizer-demo.gif)
 
 ### Code Snippets
+<br>
 
+#### Row Creation & Styling:
 ```ruby
  <div class="container p-10">
     <div class="row time-block">
@@ -48,6 +50,7 @@ A simple user-friendly web app to manage your workday schedule by the hour. Slee
 I created an html container `<div>` for my time block, text area, and button. Using bootstrap I createed rows out these elements and formatted their sizing.
 <br>
 
+#### Local Storage with Persist:
 ```ruby
 var saveBtn2 = $("#b2")
 var text2 = $("#t2")
@@ -67,6 +70,7 @@ retain2()
 Here I created variables referenced with jquery selectors on the html. I attached an event listener on that specific row's save button; upon click, the contents of the text area are saved to local storage. Lastly, there is a persist function which displays your previously entered text once the page is refreshed.  
 <br>
 
+#### Textarea Background Changer:
 ```ruby
 var hourNow = moment().format("H");
 var hourNum = [9, 10, 11, 12, 13, 14, 15, 16, 17];
