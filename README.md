@@ -35,7 +35,7 @@ A simple user-friendly web app to manage your workday schedule by the hour. Slee
 ![schedulizer web-app demo](/assets/images/schedulizer-demo.gif)
 
 ### Code Snippet
-'''
+'''ruby
  <div class="container p-10">
     <div class="row time-block">
       <span class="col-md-1 hour">9 AM</span>
@@ -47,7 +47,7 @@ A simple user-friendly web app to manage your workday schedule by the hour. Slee
 
 #### Code snippet showing how the rows were created in html using bootstrap.
 
-'''
+'''ruby
 var saveBtn2 = $("#b2")
 var text2 = $("#t2")
 
@@ -68,6 +68,7 @@ retain2()
 
 ## User Information
 
+### **Michael Wence**
 [LinkedIn](https://www.linkedin.com/in/michael-wence/) |
 [GitHub](https://github.com/mtwence)
 
@@ -75,7 +76,7 @@ retain2()
 
 UCB - Coding Bootcamp
 
-Kavya Mandla: Helped with locale storage functions.
+Kavya Mandla & Chelsea Burnham: Helped with locale storage function(s).
 
 ## License
 
@@ -83,4 +84,4 @@ Kavya Mandla: Helped with locale storage functions.
 
 ---
 
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+© 2022 Michael Wence. All Rights Reserved.
