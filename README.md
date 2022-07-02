@@ -35,7 +35,6 @@ A simple user-friendly web app to manage your workday schedule by the hour. Slee
 ![schedulizer web-app demo](/assets/images/schedulizer-demo.gif)
 
 ### Code Snippets
-<br>
 
 #### Row Creation & Styling:
 ```ruby
